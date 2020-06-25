@@ -1,0 +1,29 @@
+﻿@model Chearn.Models.Student
+
+@{
+    ViewBag.Title = "My Chearn";
+}
+
+<h1>My Chearn</h1>
+<div class="row">
+    <div class="col">
+        <h4>Welcome @Html.ValueFor(model => model.CUser.FirstName) @Html.ValueFor(model => model.CUser.LastName)!</h4>
+    </div>
+    <div class="col">
+        <h4>About you</h4>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <button class="btn btn-lg">@Html.ActionLink("Edit Profile Details", "Edit", new { id = Model.ID })</button>
+        <button class="btn btn-lg">@Html.ActionLink("Update Password", "ChangePassword", "Manage", routeValues: null, htmlAttributes: new { @class = "" })</button>
+        @Html.AntiForgeryToken()
+        <button class="btn btn-lg">@Html.ActionLink("Delete Account", "DeleteUser", "Manage", routeValues: null, htmlAttributes: new { @class = "" })</button>
+    </div>
+    <div class="col-md-8">
+        @Html.ValueFor(model => model.CUser.About)
+    </div>
+    
+</div>
+

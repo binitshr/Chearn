@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Review Center";
+}
+
+<h2>Review Center</h2>
+<div class="card">
+    <div class="card-body review-card" id="review-area">
+        <p id="current"></p>
+        <div id="question-text"></div>
+        <input type="text" id="question-answer" />
+        <button class="btn" type="button" id="question-submit"> Check </button>
+    </div>
+</div>
+@Scripts.Render("https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js")
+@Scripts.Render("https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js")
+@Scripts.Render("~/Scripts/PageLogic/ReviewCenter.js")
+

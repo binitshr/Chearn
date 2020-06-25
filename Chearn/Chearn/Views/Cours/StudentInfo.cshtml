@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "Student Info";
+}
+<data id="data" courseID="@ViewBag.CourseID"></data>
+<h2>Student Info</h2>
+<hr />
+<a href="/Cours/Info/@ViewBag.CourseID">Back To Aggregate Statistics</a>
+<hr />
+<div class="row">
+    <div id="searchbar" class="col-md-2">
+        <input type="text" id="search-input" style="width:inherit"/>
+        <div id="students-list">
+
+        </div>
+    </div>
+    <div class="card-group col-md-10" style="height:8em;">
+        <div class="card">
+            <div class="card-title" style="height:1.2em;">
+                Name
+            </div>
+            <hr />
+            <div class="card-body" id="student-name">
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title" style="height:1.2em;">
+                Start Date
+            </div>
+            <hr />
+            <div class="card-body" id="student-start-date">
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title" style="height:1.2em;">
+                Average Reviews Per Day
+            </div>
+            <hr />
+            <div class="card-body" id="student-average-reviews">
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title" style="height:1.2em;">
+                Average Lessons Per Day
+            </div>
+            <hr />
+            <div class="card-body" id="student-average-lessons">
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title" style="height:1.2em;">
+                Student's Projected End Date
+            </div>
+            <hr />
+            <div class="card-body" id="student-projected-completion">
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title" style="height:1.2em;">
+                Email
+            </div>
+            <hr />
+            <div class="card-body">
+                <a id="student-email" href=""></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+@Scripts.Render("https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js")
+@Scripts.Render("~/Scripts/PageLogic/StudentStatistics.js") 

@@ -1,0 +1,30 @@
+﻿@model Chearn.Models.Question
+
+@{
+    ViewBag.Title = "QuizPage";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal card" style="width:48em;height:16em;text-align:center;align-content:center;">
+        <div class="alert-danger">@ViewBag.Message</div>
+        <div class="card-text">Question: @Model.Text</div>
+        <fieldset class="card-body" style="display:inline-block;">
+            <div class="col" style="width:10em;display:inline-block">
+                <div class="row">
+                    <input type="number" name="lessonID" value="@Model.ID" style="visibility:hidden" />
+                </div>
+                <div class="row">
+                    <input type="text" name="answer" />
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Submit Answer" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}

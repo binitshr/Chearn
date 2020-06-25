@@ -1,0 +1,188 @@
+﻿/* Root start */
+:root {
+    --primary-text-color: #0f4089;
+    --primary-highlight-color: #f9f8e8;
+    --secondary-highlight-color: #2dc1fb;
+    --primary-highlight-border-color: #007bff87;
+    --primary-bg-color: #fbf9d9;
+    --accent-bg-color: #e2deab;
+    --primary-continue-color: #7cff67;
+    --primary-stop-color: #fc2e2e;
+    --primary-bg-success: #90efad;
+    --primary-bg-fail: #f3795b;
+}
+div {
+    color: var(--primary-text-color)
+}
+
+/*Element level style */
+body {
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+}
+
+textarea {
+    width: 100%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+/*Class level styles*/
+.cnavbar {
+    background-color: var(--accent-bg-color);
+}
+.course{
+    background: linear-gradient(var(--primary-bg-color) 10%, var(--accent-bg-color) 90%);
+}
+.add-course{
+    background: linear-gradient(to left top, green 5%, lightgreen 50% );
+    border-radius: 16px;
+}
+.cn-icon{
+    border-radius: 32px;
+    background-color: var(--primary-bg-color);
+}
+.cn-icon:hover{
+    border: 3px solid var(--primary-highlight-border-color);
+}
+.qa-area {
+    background-color: #fbf9d9;
+    border-radius: 25px;
+    border: 2px solid #e2deab;
+    padding: 10px;
+    color: var(--primary-text-color);
+}
+
+.category-list {
+    display: inline;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.bottom-padded{
+    padding-bottom: 2em;
+}
+
+.top-padded{
+    padding-top: 2em;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+/*TEMP: set cy graphing area dimensions*/
+#cy {
+    height: 50em;
+    width: 60em;
+    background-color: #fff;
+    background-size: 100% 1.2em;
+    background-image: -webkit-linear-gradient(0deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), -webkit-linear-gradient(#eee .05em, transparent .05em);
+    background-image: -moz-linear-gradient(0deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), -moz-linear-gradient(#eee .05em, transparent .05em);
+    background-image: -ms-linear-gradient(0deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), -ms-linear-gradient(#eee .05em, transparent .05em);
+    background-image: -o-linear-gradient(0deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), -o-linear-gradient(#eee .05em, transparent .05em);
+    background-image: linear-gradient(0deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), linear-gradient(#eee .05em, transparent .05em);
+    -pie-background: linear-gradient(0deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px) 0 0 / 100% 1.2em, linear-gradient(#eee .05em, transparent .05em) 0 0 / 100% 1.2em #fff;
+    behavior: url(/PIE.htc);
+}
+.lesson {
+    background-color: var(--primary-highlight-color);
+}
+a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+.new-lesson {
+    background-color: var(--primary-highlight-color);
+    cursor:grab;
+}
+.new-lesson:hover{
+    border: 4px solid var(--primary-highlight-border-color)
+}
+.cn-continue{
+    background-color: var(--primary-continue-color)
+}
+
+.cn-stop{
+    background-color: var(--primary-stop-color);
+    color: black;
+    text-decoration: none;
+}
+.greyed-out {
+    background-color: grey;
+    cursor: not-allowed;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.speech-bubble {
+    position: relative;
+    background-color: burlywood;
+    border-radius: .4em;
+}
+
+    .speech-bubble:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border: 20px solid transparent;
+        border-left-color: burlywood;
+        border-right: 0;
+        border-bottom: 0;
+        margin-top: -10px;
+        margin-right: -20px;
+    }
+
+    .review-card {
+        transition: all 0.5s ease;
+
+    }
+    .review-card-success {
+        background-color: var(--primary-bg-success);
+    }
+    .review-card-fail {
+    background-color: var(--primary-bg-fail);
+}
+.chearn-title-card-color {
+    background-color:var(--accent-bg-color);
+}
+.chearn-body-card-color {
+    background-color: var(--primary-highlight-color);
+}
+
+.point-added {
+    animation-duration: 2s;
+    animation-name: pointIncrement;
+}
+@keyframes pointIncrement {
+    from {
+        opacity: 1;
+        color: aqua;
+        transform: translateY(0px);
+    }
+    to {
+        opacity: 0;
+        color: aquamarine;
+        transform: translateY(-100px);
+    }
+}

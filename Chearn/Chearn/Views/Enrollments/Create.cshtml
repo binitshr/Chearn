@@ -1,0 +1,18 @@
+﻿
+@model Chearn.Models.Cours
+
+
+<h2>Are you sure you want to Enroll ? </h2>
+
+
+<button class='cn-icon'>
+    <a href="/Enrollments/ConfirmEnrollment/?courseID=@Model.ID"> Confirm Enrollment </a>
+</button>
+
+<button class='cn-icon'>
+    <a href="/CoursesAvailable/Index"> Show me other Courses </a>
+</button>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }

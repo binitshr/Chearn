@@ -1,0 +1,27 @@
+﻿@model List<Chearn.Models.ViewModels.CourseSharingModel>
+
+@{ 
+    ViewBag.Title = "CourseShare";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Share Your Course!</h2>
+
+
+<div class="card-deck">
+    @foreach (var Teacher in Model)
+    {
+        <div class="card course" style = "max-width:20em">
+            <div class="card-body">
+                @using (Html.BeginForm(Teacher))
+                {
+                    <div class="form-group">
+                        <h5 class="card-title">@Teacher.FirstName @Teacher.LastName</h5>
+                        <input type="submit" name="add" value="Add" />
+                        <input type="submit" name="remove" value="Remove" />
+                    </div>
+                }
+                </div>
+        </div>
+    }
+</div>

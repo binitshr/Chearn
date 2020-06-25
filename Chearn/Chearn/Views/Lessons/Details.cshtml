@@ -1,0 +1,50 @@
+﻿@model Chearn.Models.Lesson
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Lesson</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cours.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cours.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaterialA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaterialA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaterialB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaterialB)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

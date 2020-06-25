@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chearn", "Chearn\Chearn.csproj", "{DFD4CFF0-E61E-46DF-97DF-B6AB6A79F3DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChearnUnitTest", "ChearnUnitTest\ChearnUnitTest.csproj", "{96824429-3C65-4C97-A85F-DC5A61BEDC17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFD4CFF0-E61E-46DF-97DF-B6AB6A79F3DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFD4CFF0-E61E-46DF-97DF-B6AB6A79F3DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFD4CFF0-E61E-46DF-97DF-B6AB6A79F3DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFD4CFF0-E61E-46DF-97DF-B6AB6A79F3DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96824429-3C65-4C97-A85F-DC5A61BEDC17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96824429-3C65-4C97-A85F-DC5A61BEDC17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96824429-3C65-4C97-A85F-DC5A61BEDC17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96824429-3C65-4C97-A85F-DC5A61BEDC17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3881E13-DF77-4632-BE96-D6242E1FA1BB}
+	EndGlobalSection
+EndGlobal

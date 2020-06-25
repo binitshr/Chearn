@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Chearn.Models.Question>
+
+@{
+    ViewBag.Title = "Index";
+}
+<data id="data" val="@ViewBag.CourseID"></data>
+<h2>Bulk Edit</h2>
+<a href="/Questions/Help">Looking for help deciding a fair point total?</a>
+<h5>Points</h5>
+<input type="text" id="points" />
+<br />
+<h5>Search</h5>
+<input type="text" id="search-input" />
+<button id="search-button">Search</button>
+<h5>Apply</h5>
+<button id="apply">Apply Points</button>
+<div id="results">
+
+</div>
+@Scripts.Render("https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js")
+
+@Scripts.Render("~/Scripts/PageLogic/BulkEdit.js")
+
+

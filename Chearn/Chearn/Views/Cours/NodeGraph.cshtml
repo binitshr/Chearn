@@ -1,0 +1,34 @@
+﻿@model Chearn.Models.Cours
+
+@{
+    ViewBag.Title = "Node Graph";
+}
+
+<data id="CourseID" value="@ViewBag.CourseID"></data>
+<h2>Lesson Graphing</h2>
+<div class="text-danger" id="warningMessage"></div>
+
+<div class="row">
+    <div id="resultRow" class="col-md-3" style="max-height:50em;overflow-y:scroll;" >
+        <input class="form-control" id="lessonSearchbar" type="search" />
+    </div>
+    <div class="col-md-9" style="padding-left: 0px; padding-right: 0px">
+        <div class="ui-menu cnavbar" style="margin-left:4px;width:60em">
+            <h3>Control center</h3>
+            <div class="row" style="margin-left: 4px">
+                <button id ="saveButton" class="btn btn-success">Save Changes</button>
+                <button id="revertButton" class="btn btn-warning">Revert Changes</button>
+                <button id="resetButton"class="btn btn-danger">Reset Graph</button>
+            </div>
+        </div>
+        <div id="cy">
+        
+        </div>
+    </div>
+</div>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js")
+@Scripts.Render("https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.14.0/cytoscape.min.js")
+@Scripts.Render("https://cdn.jsdelivr.net/npm/cytoscape-edgehandles@3.6.0/cytoscape-edgehandles.min.js")
+@Scripts.Render("https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js")
+@Scripts.Render("~/Scripts/PageLogic/NodeGraph.js") 

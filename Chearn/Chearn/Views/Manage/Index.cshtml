@@ -1,0 +1,10 @@
+﻿@model Chearn.Models.IndexViewModel
+@{
+    ViewBag.Title = "PasswordSuccess";
+}
+<h2>Success</h2>
+<p class="text-success">@ViewBag.StatusMessage</p>
+<div>
+    <hr />
+    @Html.ActionLink("Return Home", "Index", "Home", routeValues: null, htmlAttributes: new { @class=""})
+</div>

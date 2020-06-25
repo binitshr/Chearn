@@ -1,0 +1,46 @@
+﻿@model Chearn.Models.Cours
+
+@{
+    ViewBag.Title = "Edit Course";
+}
+<data id="CourseID" value="@Model.ID"></data>
+
+<h2>Edit Course</h2>
+<hr />
+
+@if (Model.Lessons.Count != 0 || Model.Valid != true || Model.Comfirmed != true)
+{
+    <h5>Submit course for review <input type="checkbox" id="ValidCheckbox" value="@Model.Valid"/></h5>
+}
+
+<div class="row">
+    <div style="width:18em">
+        <div id="resultRow" style="max-height:80em;hidden; overflow-y:scroll;">
+            <input class="form-control" id="lessonSearchbar" type="search" />
+        </div>
+    </div>
+    <div>
+        <h5>Add Lesson</h5>
+        <button class="cn-icon" style="background-color:var(--accent-bg-color)">
+            <a href="@Url.Action("Create", "Lessons", new { id = Model.ID})">Add New Lesson<img src="~/Content/icons/plus.svg" width="32" height="32"></a>
+        </button>
+    </div>
+    <div>
+        <h5>Bulk Edit</h5>
+        <button class="cn-icon" style="background-color:var(--accent-bg-color)">
+            <a href="@Url.Action("Index", "Questions", new { id = Model.ID})">Bulk Edit<img src="~/Content/icons/plus.svg" width="32" height="32"></a>
+        </button>
+    </div>
+    <div>
+        <h5>Course Graphing</h5>
+        <button class="cn-icon" style="background-color:var(--accent-bg-color)">
+            <a href="@Url.Action("NodeGraph", "Cours", new { id = Model.ID})"> Create Course Roadmap <img src="~/Content/icons/plus.svg" width="32" height="32"></a>
+        </button>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js")
+@Scripts.Render("https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js")
+@Scripts.Render("~/Scripts/PageLogic/EditCourse.js") 
+@Scripts.Render("/Scripts/PageLogic/CourseEdit.js")

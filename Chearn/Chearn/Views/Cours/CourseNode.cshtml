@@ -1,0 +1,25 @@
+﻿@model Chearn.Models.Cours
+@{
+    ViewBag.Title = "StudentCourse";
+}
+<data id="CourseID" value="@ViewBag.CourseID"></data>
+<h2>Course Home</h2>
+<div class="text-danger" id="warningMessage"></div>
+
+<div class="row">
+    <div style="width:18em">
+        <div id="resultRow" style="max-height:80em;hidden; overflow-y:scroll;">
+            <input class="form-control" id="lessonSearchbar" type="search" />
+        </div>
+    </div>
+    
+
+</div>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js")
+@Scripts.Render("https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.14.0/cytoscape.min.js")
+@Scripts.Render("https://cdn.jsdelivr.net/npm/cytoscape-edgehandles@3.6.0/cytoscape-edgehandles.min.js")
+@Scripts.Render("https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js")
+@Scripts.Render("~/Scripts/PageLogic/NodeGraph.js")
+
+

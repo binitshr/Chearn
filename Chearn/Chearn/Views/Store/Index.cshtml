@@ -1,0 +1,19 @@
+﻿
+@model ICollection<Chearn.Models.ShopItem>
+
+@{
+    ViewBag.Title = "Store";
+}
+
+<h1>Store</h1>
+
+<div class="container">
+    <ul style="display:inline; text-align:center">
+        @foreach (Chearn.Models.Category cat in ViewBag.categories)
+        {
+        <li style="display:inline;"><a href=@Url.Action("Category", "Store", new { c = cat.ID }) class="btn btn-primary" role="button">@cat.Name</a></li>
+        }
+    </ul>
+    <br /><br /><br />
+    @Html.Partial("_ShopItemPartial", Model)
+</div>

@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Chearn.Models.BlogPost>
+
+@{
+    ViewBag.Title = "Blog Page";
+}
+
+<h2>Blog Posts</h2>
+
+<p>
+    @Html.ActionLink("Add Blog Post", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Author)
+        </th>
+        <th>
+            Date To Publish
+        </th>
+        <th>
+            Title
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FormattedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                <button class="cn-icon"><a href="@Url.Action("Details", "BlogPosts", new { id = item.ID })"><img src="~/Content/icons/eye.svg" width="24" height="24" alt="Delete" title="Info" /></a></button>
+                <button class="cn-icon"><a href="@Url.Action("Edit", "BlogPosts", new { id = item.ID})"><img src="~/Content/icons/pencil.svg" alt="Edit" width="24" height="24" title="Edit" /></a></button>
+                <button class="cn-icon"><a href="@Url.Action("Delete", "BlogPosts", new { id = item.ID})"><img src="~/Content/icons/trash.svg" width="24" height="24" alt="Delete" title="Delete" /></a></button>
+            </td>
+        </tr>
+    }
+
+</table>

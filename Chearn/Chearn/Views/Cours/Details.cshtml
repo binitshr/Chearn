@@ -1,0 +1,42 @@
+﻿@model Chearn.Models.Cours
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2> Course Details </h2>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        
+       
+
+        <dt>
+            @Html.DisplayFor(model => model.Name)
+        </dt>
+
+
+        <dd>
+           Details Related to Course will be Posted Here
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+    </dl>
+</div>
+
+
+
+<h5>
+    <button class='cn-icon'>
+        <a href="/Enrollments/Create/?courseID=@Model.ID">Enroll in the Course</a>
+    </button>
+</h5>
+
+
+
+<hr>
+<p>
+   
+    @Html.ActionLink("View All Courses", "Index","CoursesAvailable")
+</p>

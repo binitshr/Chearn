@@ -1,0 +1,138 @@
+﻿@using Chearn.Controllers;
+@using Microsoft.AspNet.Identity;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title -Chearn</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+
+</head>
+<body>
+    <a href="/Home/Index"><img src="~/Content/img/ChearnLogo.png" /></a>
+
+    <nav class="navbar navbar-expand-lg navbar-light cnavbar ">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto" style="list-style-type:none">
+
+                @if (!User.Identity.IsAuthenticated)
+                {
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Register
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            @Html.ActionLink("Register with Chearn", "Register", "Account", routeValues: null, htmlAttributes: new { @class = "dropdown-item" })
+
+                            @Html.ActionLink("Register with Google", "login", "Account", routeValues: null, htmlAttributes: new { @class = "dropdown-item" })
+                        </div>
+                    </li>
+                    <li class="nav-item active">@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "nav-link" })</li>
+
+                }
+                <li class="nav-item nav-link">
+                    @Html.ActionLink("My Courses", "StudentCourses", "Cours")
+                </li>
+
+                
+                @if (User.IsInRole("Admin"))
+                {
+            <li class="nav-item nav-link">
+                @Html.ActionLink("All Classes", "AllCourses", "Admin")
+                @Html.ActionLink("All Users", "AllUsers", "Admin")
+                @Html.ActionLink("Register a user", "Register", "Account")
+                @Html.ActionLink("Manage News Posts", "Index", "BlogPosts")
+            </li>
+                }
+                else if (User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+                {
+                    <li class="nav-item nav-link">
+                        @Html.ActionLink("Course Management", "Index", "Cours")
+                    </li>
+                    <li class="nav-item nav-link">
+                        @Html.ActionLink("Review Center", "ReviewCenter", "Review")
+                    </li>
+                }
+                else if (User.IsInRole("Instructor"))
+                {
+                    <li class="nav-item nav-link">
+                        @Html.ActionLink("Course Management", "Index", "Cours")
+                    </li>
+
+                }
+                else if (User.IsInRole("Student"))
+                {
+                    <li class="nav-item nav-link">
+                        @Html.ActionLink("My Courses", "StudentCourses", "Cours")
+                    </li>
+
+                }
+
+                <li class="nav-item nav-link">
+                    @Html.ActionLink("Courses Available", "Index", "CoursesAvailable")
+                </li>
+                <li class="nav-item nav-link">
+                    @Html.ActionLink("News", "News", "BlogPosts")
+                </li>
+
+                @if (Request.IsAuthenticated)
+                {
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @User.Identity.Name
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            @if (StudentsController.UserIsStudent(User.Identity.GetUserId()))
+                            {
+                                @Html.ActionLink("My Chearn", "Details", "Students", routeValues: null, htmlAttributes: new { @class = "dropdown-item" })
+                            }
+                            <div class="dropdown-divider"></div>
+                            @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                <a class="dropdown-item" href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+                            }
+                        </div>
+                    </li>
+                }
+
+            </ul>
+        </div>
+    </nav>
+   
+    
+    
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+
+            @Html.ActionLink("About", "About", "Home", routeValues: null, htmlAttributes: null) |
+            @Html.ActionLink("Contact", "Contact", "Home", routeValues: null, htmlAttributes: null)
+
+            <p>&copy; @DateTime.Now.Year - Chearn</p>
+        </footer>
+    </div>
+
+
+
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    @RenderSection("scripts", required: false)
+     <script>
+         $('textarea').each(function () {
+             var simplemde = new SimpleMDE({ element: this });
+             simplemde.render();
+         })
+
+     </script>
+    
+</body>
+</html>

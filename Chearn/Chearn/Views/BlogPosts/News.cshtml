@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "News";
+}
+
+<h2>News</h2>
+<h4>Results Per Page</h4>
+<input type="text" id="results-per-page" value="5" style="width:2em"/>
+<p id="results-per-page-error"></p>
+<hr />
+<div id="blog-list-section">
+
+</div>
+<div id="pagination" class="flex-row"></div>
+@Scripts.Render("https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js")
+@Scripts.Render("~/Scripts/PageLogic/News.js")

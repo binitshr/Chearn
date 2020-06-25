@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Binit\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Binit\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_Chearn.1939644712.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Binit\Desktop\Akai Solutions\akaisolutions\Milestones\MileStone 6\Chearn" t="IncludeFlat">
+      <e p="Chearn" t="IncludeRecursive">
+        <e p="App_Data" t="Include">
+          <e p="down.sql" t="Include" />
+          <e p="seed.sql" t="Include" />
+          <e p="up.sql" t="Include" />
+        </e>
+        <e p="App_Start" t="Include">
+          <e p="BundleConfig.cs" t="Include" />
+          <e p="FilterConfig.cs" t="Include" />
+          <e p="IdentityConfig.cs" t="Include" />
+          <e p="RouteConfig.cs" t="Include" />
+          <e p="Startup.Auth.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Chearn.csproj" t="IncludeRecursive" />
+        <e p="Content" t="Include">
+          <e p="bootstrap-grid.css" t="Include" />
+          <e p="bootstrap-grid.css.map" t="Include" />
+          <e p="bootstrap-grid.min.css" t="Include" />
+          <e p="bootstrap-grid.min.css.map" t="Include" />
+          <e p="bootstrap-reboot.css" t="Include" />
+          <e p="bootstrap-reboot.css.map" t="Include" />
+          <e p="bootstrap-reboot.min.css" t="Include" />
+          <e p="bootstrap-reboot.min.css.map" t="Include" />
+          <e p="bootstrap.css" t="Include" />
+          <e p="bootstrap.css.map" t="Include" />
+          <e p="bootstrap.min.css" t="Include" />
+          <e p="bootstrap.min.css.map" t="Include" />
+          <e p="icons" t="Include">
+            <e p="alarm-fill.svg" t="Include" />
+            <e p="alarm.svg" t="Include" />
+            <e p="alert-circle-fill.svg" t="Include" />
+            <e p="alert-circle.svg" t="Include" />
+            <e p="alert-octagon-fill.svg" t="Include" />
+            <e p="alert-octagon.svg" t="Include" />
+            <e p="alert-square-fill.svg" t="Include" />
+            <e p="alert-square.svg" t="Include" />
+            <e p="alert-triangle-fill.svg" t="Include" />
+            <e p="alert-triangle.svg" t="Include" />
+            <e p="archive-fill.svg" t="Include" />
+            <e p="archive.svg" t="Include" />
+            <e p="arrow-bar-bottom.svg" t="Include" />
+            <e p="arrow-bar-left.svg" t="Include" />
+            <e p="arrow-bar-right.svg" t="Include" />
+            <e p="arrow-bar-up.svg" t="Include" />
+            <e p="arrow-clockwise.svg" t="Include" />
+            <e p="arrow-counterclockwise.svg" t="Include" />
+            <e p="arrow-down-left.svg" t="Include" />
+            <e p="arrow-down-right.svg" t="Include" />
+            <e p="arrow-down-short.svg" t="Include" />
+            <e p="arrow-down.svg" t="Include" />
+            <e p="arrow-left-right.svg" t="Include" />
+            <e p="arrow-left-short.svg" t="Include" />
+            <e p="arrow-left.svg" t="Include" />
+            <e p="arrow-repeat.svg" t="Include" />
+            <e p="arrow-right-short.svg" t="Include" />
+            <e p="arrow-right.svg" t="Include" />
+            <e p="arrow-up-down.svg" t="Include" />
+            <e p="arrow-up-left.svg" t="Include" />
+            <e p="arrow-up-right.svg" t="Include" />
+            <e p="arrow-up-short.svg" t="Include" />
+            <e p="arrow-up.svg" t="Include" />
+            <e p="arrows-angle-contract.svg" t="Include" />
+            <e p="arrows-angle-expand.svg" t="Include" />
+            <e p="arrows-collapse.svg" t="Include" />
+            <e p="arrows-expand.svg" t="Include" />
+            <e p="arrows-fullscreen.svg" t="Include" />
+            <e p="at.svg" t="Include" />
+            <e p="award.svg" t="Include" />
+            <e p="backspace-fill.svg" t="Include" />
+            <e p="backspace-reverse-fill.svg" t="Include" />
+            <e p="backspace-reverse.svg" t="Include" />
+            <e p="backspace.svg" t="Include" />
+            <e p="bar-chart-fill.svg" t="Include" />
+            <e p="bar-chart.svg" t="Include" />
+            <e p="battery-charging.svg" t="Include" />
+            <e p="battery-full.svg" t="Include" />
+            <e p="battery.svg" t="Include" />
+            <e p="bell-fill.svg" t="Include" />
+            <e p="bell.svg" t="Include" />
+            <e p="blockquote-left.svg" t="Include" />
+            <e p="blockquote-right.svg" t="Include" />
+            <e p="book-half-fill.svg" t="Include" />
+            <e p="book.svg" t="Include" />
+            <e p="bookmark-fill.svg" t="Include" />
+            <e p="bookmark.svg" t="Include" />
+            <e p="bootstrap-fill.svg" t="Include" />
+            <e p="bootstrap-reboot.svg" t="Include" />
+            <e p="bootstrap.svg" t="Include" />
+            <e p="box-arrow-bottom-left.svg" t="Include" />
+            <e p="box-arrow-bottom-right.svg" t="Include" />
+            <e p="box-arrow-down.svg" t="Include" />
+            <e p="box-arrow-left.svg" t="Include" />
+            <e p="box-arrow-right.svg" t="Include" />
+            <e p="box-arrow-up-left.svg" t="Include" />
+            <e p="box-arrow-up-right.svg" t="Include" />
+            <e p="box-arrow-up.svg" t="Include" />
+            <e p="braces.svg" t="Include" />
+            <e p="brightness-fill-high.svg" t="Include" />
+            <e p="brightness-fill-low.svg" t="Include" />
+            <e p="brightness-high.svg" t="Include" />
+            <e p="brightness-low.svg" t="Include" />
+            <e p="brush.svg" t="Include" />
+            <e p="bucket-fill.svg" t="Include" />
+            <e p="bucket.svg" t="Include" />
+            <e p="building.svg" t="Include" />
+            <e p="bullseye.svg" t="Include" />
+            <e p="calendar-fill.svg" t="Include" />
+            <e p="calendar.svg" t="Include" />
+            <e p="camera-video-fill.svg" t="Include" />
+            <e p="camera-video.svg" t="Include" />
+            <e p="camera.svg" t="Include" />
+            <e p="capslock-fill.svg" t="Include" />
+            <e p="capslock.svg" t="Include" />
+            <e p="chat-fill.svg" t="Include" />
+            <e p="chat.svg" t="Include" />
+            <e p="check-box.svg" t="Include" />
+            <e p="check-circle.svg" t="Include" />
+            <e p="check.svg" t="Include" />
+            <e p="chevron-compact-down.svg" t="Include" />
+            <e p="chevron-compact-left.svg" t="Include" />
+            <e p="chevron-compact-right.svg" t="Include" />
+            <e p="chevron-compact-up.svg" t="Include" />
+            <e p="chevron-down.svg" t="Include" />
+            <e p="chevron-left.svg" t="Include" />
+            <e p="chevron-right.svg" t="Include" />
+            <e p="chevron-up.svg" t="Include" />
+            <e p="circle-fill.svg" t="Include" />
+            <e p="circle-half.svg" t="Include" />
+            <e p="circle-slash.svg" t="Include" />
+            <e p="circle.svg" t="Include" />
+            <e p="clock-fill.svg" t="Include" />
+            <e p="clock.svg" t="Include" />
+            <e p="cloud-download.svg" t="Include" />
+            <e p="cloud-fill.svg" t="Include" />
+            <e p="cloud-upload.svg" t="Include" />
+            <e p="cloud.svg" t="Include" />
+            <e p="code-slash.svg" t="Include" />
+            <e p="code.svg" t="Include" />
+            <e p="columns-gutters.svg" t="Include" />
+            <e p="columns.svg" t="Include" />
+            <e p="command.svg" t="Include" />
+            <e p="compass.svg" t="Include" />
+            <e p="cone-striped.svg" t="Include" />
+            <e p="cone.svg" t="Include" />
+            <e p="controller.svg" t="Include" />
+            <e p="credit-card.svg" t="Include" />
+            <e p="cursor-fill.svg" t="Include" />
+            <e p="cursor.svg" t="Include" />
+            <e p="dash.svg" t="Include" />
+            <e p="diamond-half.svg" t="Include" />
+            <e p="diamond.svg" t="Include" />
+            <e p="display-fill.svg" t="Include" />
+            <e p="display.svg" t="Include" />
+            <e p="document-code.svg" t="Include" />
+            <e p="document-diff.svg" t="Include" />
+            <e p="document-richtext.svg" t="Include" />
+            <e p="document-spreadsheet.svg" t="Include" />
+            <e p="document-text.svg" t="Include" />
+            <e p="document.svg" t="Include" />
+            <e p="documents-alt.svg" t="Include" />
+            <e p="documents.svg" t="Include" />
+            <e p="dot.svg" t="Include" />
+            <e p="download.svg" t="Include" />
+            <e p="egg-fried.svg" t="Include" />
+            <e p="eject-fill.svg" t="Include" />
+            <e p="eject.svg" t="Include" />
+            <e p="envelope-fill.svg" t="Include" />
+            <e p="envelope-open-fill.svg" t="Include" />
+            <e p="envelope-open.svg" t="Include" />
+            <e p="envelope.svg" t="Include" />
+            <e p="eye-fill.svg" t="Include" />
+            <e p="eye-slash-fill.svg" t="Include" />
+            <e p="eye-slash.svg" t="Include" />
+            <e p="eye.svg" t="Include" />
+            <e p="filter.svg" t="Include" />
+            <e p="flag-fill.svg" t="Include" />
+            <e p="flag.svg" t="Include" />
+            <e p="folder-fill.svg" t="Include" />
+            <e p="folder-symlink-fill.svg" t="Include" />
+            <e p="folder-symlink.svg" t="Include" />
+            <e p="folder.svg" t="Include" />
+            <e p="fonts.svg" t="Include" />
+            <e p="forward-fill.svg" t="Include" />
+            <e p="forward.svg" t="Include" />
+            <e p="gear-fill.svg" t="Include" />
+            <e p="gear-wide-connected.svg" t="Include" />
+            <e p="gear-wide.svg" t="Include" />
+            <e p="gear.svg" t="Include" />
+            <e p="geo.svg" t="Include" />
+            <e p="graph-down.svg" t="Include" />
+            <e p="graph-up.svg" t="Include" />
+            <e p="grid-fill.svg" t="Include" />
+            <e p="grid.svg" t="Include" />
+            <e p="hammer.svg" t="Include" />
+            <e p="hash.svg" t="Include" />
+            <e p="heart-fill.svg" t="Include" />
+            <e p="heart.svg" t="Include" />
+            <e p="house-fill.svg" t="Include" />
+            <e p="house.svg" t="Include" />
+            <e p="image-alt.svg" t="Include" />
+            <e p="image-fill.svg" t="Include" />
+            <e p="image.svg" t="Include" />
+            <e p="images.svg" t="Include" />
+            <e p="inbox-fill.svg" t="Include" />
+            <e p="inbox.svg" t="Include" />
+            <e p="inboxes-fill.svg" t="Include" />
+            <e p="inboxes.svg" t="Include" />
+            <e p="info-fill.svg" t="Include" />
+            <e p="info-square-fill.svg" t="Include" />
+            <e p="info-square.svg" t="Include" />
+            <e p="info.svg" t="Include" />
+            <e p="justify-left.svg" t="Include" />
+            <e p="justify-right.svg" t="Include" />
+            <e p="justify.svg" t="Include" />
+            <e p="kanban-fill.svg" t="Include" />
+            <e p="kanban.svg" t="Include" />
+            <e p="laptop.svg" t="Include" />
+            <e p="layout-sidebar-reverse.svg" t="Include" />
+            <e p="layout-sidebar.svg" t="Include" />
+            <e p="layout-split.svg" t="Include" />
+            <e p="list-check.svg" t="Include" />
+            <e p="list-ol.svg" t="Include" />
+            <e p="list-task.svg" t="Include" />
+            <e p="list-ul.svg" t="Include" />
+            <e p="list.svg" t="Include" />
+            <e p="lock-fill.svg" t="Include" />
+            <e p="lock.svg" t="Include" />
+            <e p="map.svg" t="Include" />
+            <e p="mic.svg" t="Include" />
+            <e p="moon.svg" t="Include" />
+            <e p="music-player-fill.svg" t="Include" />
+            <e p="music-player.svg" t="Include" />
+            <e p="option.svg" t="Include" />
+            <e p="outlet.svg" t="Include" />
+            <e p="pause-fill.svg" t="Include" />
+            <e p="pause.svg" t="Include" />
+            <e p="pen.svg" t="Include" />
+            <e p="pencil.svg" t="Include" />
+            <e p="people-fill.svg" t="Include" />
+            <e p="people.svg" t="Include" />
+            <e p="person-fill.svg" t="Include" />
+            <e p="person.svg" t="Include" />
+            <e p="phone-landscape.svg" t="Include" />
+            <e p="phone.svg" t="Include" />
+            <e p="pie-chart-fill.svg" t="Include" />
+            <e p="pie-chart.svg" t="Include" />
+            <e p="play-fill.svg" t="Include" />
+            <e p="play.svg" t="Include" />
+            <e p="plug.svg" t="Include" />
+            <e p="plus.svg" t="Include" />
+            <e p="power.svg" t="Include" />
+            <e p="question-fill.svg" t="Include" />
+            <e p="question-square-fill.svg" t="Include" />
+            <e p="question-square.svg" t="Include" />
+            <e p="question.svg" t="Include" />
+            <e p="reply-all-fill.svg" t="Include" />
+            <e p="reply-all.svg" t="Include" />
+            <e p="reply-fill.svg" t="Include" />
+            <e p="reply.svg" t="Include" />
+            <e p="screwdriver.svg" t="Include" />
+            <e p="search.svg" t="Include" />
+            <e p="shield-fill.svg" t="Include" />
+            <e p="shield-lock-fill.svg" t="Include" />
+            <e p="shield-lock.svg" t="Include" />
+            <e p="shield-shaded.svg" t="Include" />
+            <e p="shield.svg" t="Include" />
+            <e p="shift-fill.svg" t="Include" />
+            <e p="shift.svg" t="Include" />
+            <e p="skip-backward-fill.svg" t="Include" />
+            <e p="skip-backward.svg" t="Include" />
+            <e p="skip-end-fill.svg" t="Include" />
+            <e p="skip-end.svg" t="Include" />
+            <e p="skip-forward-fill.svg" t="Include" />
+            <e p="skip-forward.svg" t="Include" />
+            <e p="skip-start-fill.svg" t="Include" />
+            <e p="skip-start.svg" t="Include" />
+            <e p="speaker.svg" t="Include" />
+            <e p="square-fill.svg" t="Include" />
+            <e p="square-half.svg" t="Include" />
+            <e p="square.svg" t="Include" />
+            <e p="star-fill.svg" t="Include" />
+            <e p="star-half.svg" t="Include" />
+            <e p="star.svg" t="Include" />
+            <e p="stop-fill.svg" t="Include" />
+            <e p="stop.svg" t="Include" />
+            <e p="stopwatch-fill.svg" t="Include" />
+            <e p="stopwatch.svg" t="Include" />
+            <e p="sun.svg" t="Include" />
+            <e p="table.svg" t="Include" />
+            <e p="tablet-landscape.svg" t="Include" />
+            <e p="tablet.svg" t="Include" />
+            <e p="tag-fill.svg" t="Include" />
+            <e p="tag.svg" t="Include" />
+            <e p="terminal-fill.svg" t="Include" />
+            <e p="terminal.svg" t="Include" />
+            <e p="text-center.svg" t="Include" />
+            <e p="text-indent-left.svg" t="Include" />
+            <e p="text-indent-right.svg" t="Include" />
+            <e p="text-left.svg" t="Include" />
+            <e p="text-right.svg" t="Include" />
+            <e p="three-dots-vertical.svg" t="Include" />
+            <e p="three-dots.svg" t="Include" />
+            <e p="toggle-off.svg" t="Include" />
+            <e p="toggle-on.svg" t="Include" />
+            <e p="toggles.svg" t="Include" />
+            <e p="tools.svg" t="Include" />
+            <e p="trash-fill.svg" t="Include" />
+            <e p="trash.svg" t="Include" />
+            <e p="triangle-fill.svg" t="Include" />
+            <e p="triangle-half.svg" t="Include" />
+            <e p="triangle.svg" t="Include" />
+            <e p="trophy.svg" t="Include" />
+            <e p="tv-fill.svg" t="Include" />
+            <e p="tv.svg" t="Include" />
+            <e p="type-bold.svg" t="Include" />
+            <e p="type-h1.svg" t="Include" />
+            <e p="type-h2.svg" t="Include" />
+            <e p="type-h3.svg" t="Include" />
+            <e p="type-italic.svg" t="Include" />
+            <e p="type-strikethrough.svg" t="Include" />
+            <e p="type-underline.svg" t="Include" />
+            <e p="type.svg" t="Include" />
+            <e p="unlock-fill.svg" t="Include" />
+            <e p="unlock.svg" t="Include" />
+            <e p="upload.svg" t="Include" />
+            <e p="volume-down-fill.svg" t="Include" />
+            <e p="volume-down.svg" t="Include" />
+            <e p="volume-mute-fill.svg" t="Include" />
+            <e p="volume-mute.svg" t="Include" />
+            <e p="volume-up-fill.svg" t="Include" />
+            <e p="volume-up.svg" t="Include" />
+            <e p="wallet.svg" t="Include" />
+            <e p="watch.svg" t="Include" />
+            <e p="wifi.svg" t="Include" />
+            <e p="window.svg" t="Include" />
+            <e p="wrench.svg" t="Include" />
+            <e p="x-circle-fill.svg" t="Include" />
+            <e p="x-circle.svg" t="Include" />
+            <e p="x-octagon-fill.svg" t="Include" />
+            <e p="x-octagon.svg" t="Include" />
+            <e p="x-square-fill.svg" t="Include" />
+            <e p="x-square.svg" t="Include" />
+            <e p="x.svg" t="Include" />
+          </e>
+          <e p="img" t="Include">
+            <e p="ChearnLogo.png" t="Include" />
+            <e p="construction_worker.png" t="Include" />
+            <e p="forgetting_curve.png" t="Include" />
+            <e p="Human_Brain.png" t="Include" />
+            <e p="Plant.png" t="Include" />
+            <e p="SadFace.svg" t="Include" />
+          </e>
+          <e p="Site.css" t="Include" />
+          <e p="styles" t="Include" />
+          <e p="themes" t="Include">
+            <e p="base" t="Include">
+              <e p="accordion.css" t="Include" />
+              <e p="all.css" t="Include" />
+              <e p="autocomplete.css" t="Include" />
+              <e p="base.css" t="Include" />
+              <e p="button.css" t="Include" />
+              <e p="core.css" t="Include" />
+              <e p="datepicker.css" t="Include" />
+              <e p="dialog.css" t="Include" />
+              <e p="draggable.css" t="Include" />
+              <e p="images" t="Include">
+                <e p="ui-bg_flat_0_aaaaaa_40x100.png" t="Include" />
+                <e p="ui-bg_flat_75_ffffff_40x100.png" t="Include" />
+                <e p="ui-bg_glass_55_fbf9ee_1x400.png" t="Include" />
+                <e p="ui-bg_glass_65_ffffff_1x400.png" t="Include" />
+                <e p="ui-bg_glass_75_dadada_1x400.png" t="Include" />
+                <e p="ui-bg_glass_75_e6e6e6_1x400.png" t="Include" />
+                <e p="ui-bg_glass_95_fef1ec_1x400.png" t="Include" />
+                <e p="ui-bg_highlight-soft_75_cccccc_1x100.png" t="Include" />
+                <e p="ui-icons_222222_256x240.png" t="Include" />
+                <e p="ui-icons_2e83ff_256x240.png" t="Include" />
+                <e p="ui-icons_444444_256x240.png" t="Include" />
+                <e p="ui-icons_454545_256x240.png" t="Include" />
+                <e p="ui-icons_555555_256x240.png" t="Include" />
+                <e p="ui-icons_777620_256x240.png" t="Include" />
+                <e p="ui-icons_777777_256x240.png" t="Include" />
+                <e p="ui-icons_888888_256x240.png" t="Include" />
+                <e p="ui-icons_cc0000_256x240.png" t="Include" />
+                <e p="ui-icons_cd0a0a_256x240.png" t="Include" />
+                <e p="ui-icons_ffffff_256x240.png" t="Include" />
+              </e>
+              <e p="jquery-ui.css" t="Include" />
+              <e p="jquery-ui.min.css" t="Include" />
+              <e p="menu.css" t="Include" />
+              <e p="progressbar.css" t="Include" />
+              <e p="resizable.css" t="Include" />
+              <e p="selectable.css" t="Include" />
+              <e p="selectmenu.css" t="Include" />
+              <e p="slider.css" t="Include" />
+              <e p="sortable.css" t="Include" />
+              <e p="spinner.css" t="Include" />
+              <e p="tabs.css" t="Include" />
+              <e p="theme.css" t="Include" />
+              <e p="tooltip.css" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Controllers" t="Include">
+          <e p="AccountController.cs" t="Include" />
+          <e p="CoursController.cs" t="Include" />
+          <e p="CoursesAvailableController.cs" t="Include" />
+          <e p="EdgeController.cs" t="Include" />
+          <e p="HomeController.cs" t="Include" />
+          <e p="InstructorController.cs" t="Include" />
+          <e p="LessonsController.cs" t="Include" />
+          <e p="ManageController.cs" t="Include" />
+          <e p="QuestionsController.cs" t="Include" />
+          <e p="StoreController.cs" t="Include" />
+          <e p="StudentsController.cs" t="Include" />
+        </e>
+        <e p="favicon.ico" t="Include" />
+        <e p="Global.asax" t="Include" />
+        <e p="Global.asax.cs" t="Include" />
+        <e p="Models" t="Include">
+          <e p="AspNetRole.cs" t="Include" />
+          <e p="AspNetUser.cs" t="Include" />
+          <e p="AspNetUserClaim.cs" t="Include" />
+          <e p="AspNetUserLogin.cs" t="Include" />
+          <e p="AspNetUserRole.cs" t="Include" />
+          <e p="Category.cs" t="Include" />
+          <e p="ChearnContext.cs" t="Include" />
+          <e p="Cours.cs" t="Include" />
+          <e p="CUser.cs" t="Include" />
+          <e p="dtos" t="Include">
+            <e p="EdgeDTO.cs" t="Include" />
+          </e>
+          <e p="Edge.cs" t="Include" />
+          <e p="IdentityModels.cs" t="Include" />
+          <e p="Instructor.cs" t="Include" />
+          <e p="ItemTag.cs" t="Include" />
+          <e p="Lesson.cs" t="Include" />
+          <e p="OwnedItem.cs" t="Include" />
+          <e p="Question.cs" t="Include" />
+          <e p="Role.cs" t="Include" />
+          <e p="ShopItem.cs" t="Include" />
+          <e p="ShopItemCours.cs" t="Include" />
+          <e p="Student.cs" t="Include" />
+          <e p="StudentLesson.cs" t="Include" />
+          <e p="TagScore.cs" t="Include" />
+          <e p="UserRole.cs" t="Include" />
+          <e p="ViewModels" t="Include">
+            <e p="AccountViewModels.cs" t="Include" />
+            <e p="courseIndexData.cs" t="Include" />
+            <e p="EditStudentViewModel.cs" t="Include" />
+            <e p="ManageViewModels.cs" t="Include" />
+          </e>
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="Chearn - Web Deploy.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="bootstrap.bundle.js" t="Include" />
+          <e p="bootstrap.bundle.js.map" t="Include" />
+          <e p="bootstrap.bundle.min.js" t="Include" />
+          <e p="bootstrap.bundle.min.js.map" t="Include" />
+          <e p="bootstrap.js" t="Include" />
+          <e p="bootstrap.js.map" t="Include" />
+          <e p="bootstrap.min.js" t="Include" />
+          <e p="bootstrap.min.js.map" t="Include" />
+          <e p="esm" t="Include">
+            <e p="popper-utils.js" t="Include" />
+            <e p="popper-utils.js.map" t="Include" />
+            <e p="popper-utils.min.js" t="Include" />
+            <e p="popper-utils.min.js.map" t="Include" />
+            <e p="popper.js" t="Include" />
+            <e p="popper.js.map" t="Include" />
+            <e p="popper.min.js" t="Include" />
+            <e p="popper.min.js.map" t="Include" />
+          </e>
+          <e p="index.d.ts" t="Include" />
+          <e p="index.js.flow" t="Include" />
+          <e p="jquery-3.4.1.intellisense.js" t="Include" />
+          <e p="jquery-3.4.1.js" t="Include" />
+          <e p="jquery-3.4.1.min.js" t="Include" />
+          <e p="jquery-3.4.1.min.map" t="Include" />
+          <e p="jquery-3.4.1.slim.js" t="Include" />
+          <e p="jquery-3.4.1.slim.min.js" t="Include" />
+          <e p="jquery-3.4.1.slim.min.map" t="Include" />
+          <e p="jquery-ui-1.12.1.js" t="Include" />
+          <e p="jquery-ui-1.12.1.min.js" t="Include" />
+          <e p="jquery.validate-vsdoc.js" t="Include" />
+          <e p="jquery.validate.js" t="Include" />
+          <e p="jquery.validate.min.js" t="Include" />
+          <e p="jquery.validate.unobtrusive.js" t="Include" />
+          <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+          <e p="modernizr-2.8.3.js" t="Include" />
+          <e p="PageLogic" t="Include">
+            <e p="EditCourse.js" t="Include" />
+            <e p="EditLesson.js" t="Include" />
+            <e p="NodeGraph.js" t="Include" />
+            <e p="Register.js" t="Include" />
+          </e>
+          <e p="popper-utils.js" t="Include" />
+          <e p="popper-utils.js.map" t="Include" />
+          <e p="popper-utils.min.js" t="Include" />
+          <e p="popper-utils.min.js.map" t="Include" />
+          <e p="popper.js" t="Include" />
+          <e p="popper.js.map" t="Include" />
+          <e p="popper.min.js" t="Include" />
+          <e p="popper.min.js.map" t="Include" />
+          <e p="README.md" t="Include" />
+          <e p="src" t="Include">
+            <e p="index.js" t="Include" />
+            <e p="methods" t="Include">
+              <e p="defaults.js" t="Include" />
+              <e p="destroy.js" t="Include" />
+              <e p="disableEventListeners.js" t="Include" />
+              <e p="enableEventListeners.js" t="Include" />
+              <e p="placements.js" t="Include" />
+              <e p="update.js" t="Include" />
+            </e>
+            <e p="modifiers" t="Include">
+              <e p="applyStyle.js" t="Include" />
+              <e p="arrow.js" t="Include" />
+              <e p="computeStyle.js" t="Include" />
+              <e p="flip.js" t="Include" />
+              <e p="hide.js" t="Include" />
+              <e p="index.js" t="Include" />
+              <e p="inner.js" t="Include" />
+              <e p="keepTogether.js" t="Include" />
+              <e p="offset.js" t="Include" />
+              <e p="preventOverflow.js" t="Include" />
+              <e p="shift.js" t="Include" />
+            </e>
+            <e p="utils" t="Include">
+              <e p="clockwise.js" t="Include" />
+              <e p="computeAutoPlacement.js" t="Include" />
+              <e p="debounce.js" t="Include" />
+              <e p="find.js" t="Include" />
+              <e p="findCommonOffsetParent.js" t="Include" />
+              <e p="findIndex.js" t="Include" />
+              <e p="getBordersSize.js" t="Include" />
+              <e p="getBoundaries.js" t="Include" />
+              <e p="getBoundingClientRect.js" t="Include" />
+              <e p="getClientRect.js" t="Include" />
+              <e p="getFixedPositionOffsetParent.js" t="Include" />
+              <e p="getOffsetParent.js" t="Include" />
+              <e p="getOffsetRect.js" t="Include" />
+              <e p="getOffsetRectRelativeToArbitraryNode.js" t="Include" />
+              <e p="getOppositePlacement.js" t="Include" />
+              <e p="getOppositeVariation.js" t="Include" />
+              <e p="getOuterSizes.js" t="Include" />
+              <e p="getParentNode.js" t="Include" />
+              <e p="getPopperOffsets.js" t="Include" />
+              <e p="getReferenceNode.js" t="Include" />
+              <e p="getReferenceOffsets.js" t="Include" />
+              <e p="getRoot.js" t="Include" />
+              <e p="getRoundedOffsets.js" t="Include" />
+              <e p="getScroll.js" t="Include" />
+              <e p="getScrollParent.js" t="Include" />
+              <e p="getStyleComputedProperty.js" t="Include" />
+              <e p="getSupportedPropertyName.js" t="Include" />
+              <e p="getViewportOffsetRectRelativeToArtbitraryNode.js" t="Include" />
+              <e p="getWindow.js" t="Include" />
+              <e p="getWindowSizes.js" t="Include" />
+              <e p="includeScroll.js" t="Include" />
+              <e p="index.js" t="Include" />
+              <e p="isBrowser.js" t="Include" />
+              <e p="isFixed.js" t="Include" />
+              <e p="isFunction.js" t="Include" />
+              <e p="isIE.js" t="Include" />
+              <e p="isModifierEnabled.js" t="Include" />
+              <e p="isModifierRequired.js" t="Include" />
+              <e p="isNumeric.js" t="Include" />
+              <e p="isOffsetContainer.js" t="Include" />
+              <e p="removeEventListeners.js" t="Include" />
+              <e p="runModifiers.js" t="Include" />
+              <e p="setAttributes.js" t="Include" />
+              <e p="setStyles.js" t="Include" />
+              <e p="setupEventListeners.js" t="Include" />
+            </e>
+          </e>
+          <e p="umd" t="Include">
+            <e p="popper-utils.js" t="Include" />
+            <e p="popper-utils.js.map" t="Include" />
+            <e p="popper-utils.min.js" t="Include" />
+            <e p="popper-utils.min.js.map" t="Include" />
+            <e p="popper.js" t="Include" />
+            <e p="popper.js.flow" t="Include" />
+            <e p="popper.js.map" t="Include" />
+            <e p="popper.min.js" t="Include" />
+            <e p="popper.min.js.map" t="Include" />
+          </e>
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="Views" t="Include">
+          <e p="_ViewStart.cshtml" t="Include" />
+          <e p="Account" t="Include">
+            <e p="_ExternalLoginsListPartial.cshtml" t="Include" />
+            <e p="ConfirmEmail.cshtml" t="Include" />
+            <e p="ExternalLoginConfirmation.cshtml" t="Include" />
+            <e p="ExternalLoginFailure.cshtml" t="Include" />
+            <e p="ForgotPassword.cshtml" t="Include" />
+            <e p="ForgotPasswordConfirmation.cshtml" t="Include" />
+            <e p="GoogleLogin.cshtml" t="Include" />
+            <e p="Login.cshtml" t="Include" />
+            <e p="Register.cshtml" t="Include" />
+            <e p="ResetPassword.cshtml" t="Include" />
+            <e p="ResetPasswordConfirmation.cshtml" t="Include" />
+            <e p="SendCode.cshtml" t="Include" />
+            <e p="VerifyCode.cshtml" t="Include" />
+          </e>
+          <e p="Cours" t="Include">
+            <e p="Create.cshtml" t="Include" />
+            <e p="Delete.cshtml" t="Include" />
+            <e p="Details.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+            <e p="NodeGraph.cshtml" t="Include" />
+          </e>
+          <e p="CoursesAvailable" t="Include">
+            <e p="Create.cshtml" t="Include" />
+            <e p="Delete.cshtml" t="Include" />
+            <e p="Details.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="CUsers" t="Include" />
+          <e p="Edge" t="Include" />
+          <e p="Home" t="Include">
+            <e p="About.cshtml" t="Include" />
+            <e p="Contact.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Lessons" t="Include">
+            <e p="Create.cshtml" t="Include" />
+            <e p="Delete.cshtml" t="Include" />
+            <e p="Details.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Manage" t="Include">
+            <e p="AddPhoneNumber.cshtml" t="Include" />
+            <e p="ChangePassword.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+            <e p="ManageLogins.cshtml" t="Include" />
+            <e p="SetPassword.cshtml" t="Include" />
+            <e p="VerifyPhoneNumber.cshtml" t="Include" />
+          </e>
+          <e p="Questions" t="Include">
+            <e p="Create.cshtml" t="Include" />
+            <e p="Delete.cshtml" t="Include" />
+            <e p="Details.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Shared" t="Include">
+            <e p="_Layout.cshtml" t="Include" />
+            <e p="_ShopItemPartial.cshtml" t="Include" />
+            <e p="EditorTemplates" t="Include">
+              <e p="tinymce_jquery_full.cshtml" t="Include" />
+            </e>
+            <e p="Error.cshtml" t="Include" />
+            <e p="Lockout.cshtml" t="Include" />
+          </e>
+          <e p="Store" t="Include">
+            <e p="Index.cshtml" t="Include" />
+            <e p="Item.cshtml" t="Include" />
+            <e p="Programming.cshtml" t="Include" />
+          </e>
+          <e p="Students" t="Include">
+            <e p="Create.cshtml" t="Include" />
+            <e p="Delete.cshtml" t="Include" />
+            <e p="Details.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Web.config" t="Include" />
+        </e>
+        <e p="Web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+      </e>
+      <e p="Chearn.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

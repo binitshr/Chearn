@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Chearn.Models.Cours>
+
+@{
+    ViewBag.Title = "Student Courses";
+}
+
+<h2>Enrolled Courses</h2>
+
+
+<div class="card-deck">
+    @foreach (var course in Model)
+    {
+        <div class="card course" style="max-width:20em">
+            <div class="card-body">
+                <h5 class="card-title"><a href="@Url.Action("StudentCourse", "Cours", new { id = @course.ID })">@course.Name </a></h5>
+                <hr />
+            </div>
+        </div>
+    }
+</div>
+

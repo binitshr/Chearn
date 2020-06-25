@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Chearn.Models.Lesson>
+
+@{
+    ViewBag.Title = "ListOfLessons";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using (Html.BeginForm("ListOfLessons", "Admin"))
+{
+    <input id="id" value="@Model.FirstOrDefault().CourseID.Value" style="visibility:hidden" />
+    <table class="table"> 
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MaterialA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MaterialB)
+            </th>
+            <th></th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaterialA)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaterialB)
+                </td>
+            </tr>
+        }
+    </table>
+    <div class="form-group">
+        <input type="submit" name="Accept" value="Accept" />
+        <input type="submit" name="Deny" value="Deny" />
+    </div>
+}

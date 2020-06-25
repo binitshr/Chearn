@@ -1,0 +1,24 @@
+﻿
+<partial name="_ShopItemPartial" />
+@model ICollection<Chearn.Models.ShopItem>
+@{
+    ViewBag.Title = "ShopItems";
+}
+
+@if (Model.Count == 0)
+{
+    <h2>Can't find any courses!</h2>
+}
+else
+{
+    <div class="row top-padded">
+        @foreach (var itm in Model)
+        {
+            <div class="col-10 qa-area">
+                <h2>@Html.ActionLink(itm.Name, "Item", "Store", new { v = itm.ID }, new { style = "display:block" })</h2>
+                <h3>$@itm.OriginalPrice</h3>
+                <p>@itm.Description</p>
+            </div><br />
+        }
+    </div>
+}

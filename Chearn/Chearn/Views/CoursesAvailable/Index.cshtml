@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Chearn.Models.Cours>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@using (Html.BeginForm("Index", "CoursesAvailable", FormMethod.Post))
+{
+    <li>@Html.TextBox("Search", "Tag/Name")</li>
+    <li><input type="submit" value="Search" /></li>
+}
+
+
+<div class="card-deck">
+    @foreach (var course in Model)
+    {
+        <div class="card course" style="max-width:20em">
+            <div class="card-body">
+                <img class="card-img-top" src = "@Url.Action("ImageShow", "CoursesAvailable", new { id = course.ID })"  height="100" width="100" />
+                <h5 class="card-title"><a href="@Url.Action("Details", "Cours", new { id = @course.ID })">@course.Name</h5>
+                <hr />
+
+            </div>
+        </div>
+    }
+</div>

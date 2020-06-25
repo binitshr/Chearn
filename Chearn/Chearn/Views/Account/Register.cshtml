@@ -1,0 +1,94 @@
+﻿@using Chearn.Models;
+@model Chearn.Models.RegisterViewModel
+
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>@ViewBag.Title.</h2>
+
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <h4>Create a new account.</h4>
+    <hr />
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    if (ViewBag.emailInUse != null)
+    {
+    }
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-6 control-label" })
+                <div class="col-md-10">
+                    @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                @Html.LabelFor(m => m.FirstName, new { @class = "col-md-6 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.LastName, new { @class = "col-md-6 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.DoB, new { @class = "col-md-6 control-label" })
+                <div class="col-md-10">
+                    @Html.EditorFor(m => m.DoB, new { @class = "form-control" })
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-group">
+                <label>User Type</label>
+                @Html.DropDownListFor(m => m.UserType, new SelectList(Enum.GetValues(typeof(UserType))).Where(x => x.Value != "Admin"), new { @class = "form-control", id = "userType" })
+
+            </div>
+            <div class="form-group" id="yearsOfEducationForm" style="visibility:hidden">
+                @Html.LabelFor(m => m.YearsOfEducation, new { @class = "col-md-7 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.YearsOfEducation, new { @class = "form-control", id = "yearsOfEducation" })
+                </div>
+            </div>
+            <div class="form-group row" id="hasDoctorateForm" style="visibility:hidden">
+                <label class="col-md-8">Check this box if you have a doctorate </label>
+                @Html.CheckBoxFor(m => m.HasDoctorate, new { @class = "form-control col-sm" })
+
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input id= 'btnRegister' type="submit"  class="btn btn-outline-secondary" value="Register" />
+            @if(ViewBag.accept != null)
+            {
+                @ViewBag.accept
+            }
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/Scripts/PageLogic/Register.js")
+}

@@ -1,0 +1,67 @@
+﻿@model Chearn.Models.ViewModels.AggregateStatsViewModel
+
+@{
+    ViewBag.Title = "Course Statistics";
+}
+    <div class="card">
+        <h2>@Model.CourseName Statistics </h2>
+        <hr />
+        <a href="/Cours/StudentInfo/@ViewBag.CourseID">Search For Individual Student's Performance</a>
+        <hr />
+        <div class="card-group">
+            <div class="card">
+                <div class="card-title" style="background-color:var(--accent-bg-color)">
+                    <br />
+                    Active Students
+                </div>
+                <div class="card-body" style="font-size:24px">
+                    @Model.ActiveStudents
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title" style="background-color:var(--accent-bg-color)">
+                    <br />
+                    Total Students
+                </div>
+                <div class="card-body" style="font-size:24px">
+                    @Model.TotalStudents
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title" style="background-color:var(--accent-bg-color)">
+                    <br />
+                    Correct Rate
+                </div>
+                <div class="card-body" style="font-size:24px">
+                    @Model.CorrectRate.ToString().Substring(0, Model.CorrectRate.ToString().Count() < 4 ? Model.CorrectRate.ToString().Count() : 4)
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title" style="background-color:var(--accent-bg-color)">
+                    <br />
+                    SMA Average Reviews (Last @Model.ReviewDays days)
+                </div>
+                <div class="card-body" style="font-size:24px">
+                    @Model.SMAReviewsPerDay.ToString().Substring(0, Model.SMAReviewsPerDay.ToString().Count() < 4 ? Model.SMAReviewsPerDay.ToString().Count() : 4)
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            Challenge Questions:
+            <div>
+                @foreach (var question in Model.ChallengeQuestion)
+                {
+                    <div class="card">
+                        <div class="card-title card-header" style="background-color:var(--accent-bg-color)">
+                            @question.Lesson.Title
+                        </div>
+                        <div class="card-body" style="background-color:var(--primary-highlight-color)">
+                            @question.Text
+                            <br />
+                            Answer:<div style="background-color:var(--primary-bg-success);width:4em">@question.Answer</div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+</div>

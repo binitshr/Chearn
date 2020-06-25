@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Chearn.Models.CUser>
+
+@{
+    ViewBag.Title = "Roster";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Roster</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+    </tr>
+}
+
+</table>

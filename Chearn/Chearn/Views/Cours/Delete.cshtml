@@ -1,0 +1,26 @@
+﻿@model Chearn.Models.Cours
+
+@{
+    ViewBag.Title = "Delete Course";
+}
+    
+    <div class="row">
+        <h2 class="speech-bubble"><div style="">Don't delete me...</div></h2>
+        <img src="~/Content/img/SadFace.svg" height="120" width="120" />
+    </div>
+<h3>Are you sure you want to kill <b>@Model.Name</b> </h3>
+<div>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <button type="submit" value="Delete" class="cn-icon cn-continue"  >
+               Yes <img src="~/Content/icons/check.svg" />    
+            </button> |
+            <button class="cn-icon cn-stop">
+                <a style="text-decoration:none" href="@Url.Action("Index", "Cours")"> Go Back <img src="~/Content/icons/x.svg" /></a>
+            </button>
+        </div>
+    }
+</div>
